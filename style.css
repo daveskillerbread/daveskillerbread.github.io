@@ -1,5 +1,6 @@
 body {
-    background-color: rgba(98, 150, 234, 0.975);
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(109, 158, 237, 0.975);
     margin: 0;
     height: 100vh;
 }
