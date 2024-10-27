@@ -1,6 +1,9 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgba(109, 158, 237, 0.975);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0;
     height: 100vh;
 }
