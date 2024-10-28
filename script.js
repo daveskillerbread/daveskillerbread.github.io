@@ -2,7 +2,7 @@ let messages = [
     "You clicked the button!",
     "You clicked the button again!",
     "Wow, you clicked the button again...",
-    "Stop clicking the fucking button asshat I don't get paid enough for this shit"
+    "Stop clicking the button asshat I don't get paid enough for this"
 ];
 
 let clickCount = 0;
@@ -15,7 +15,7 @@ function changeText() {
     document.getElementById("greeting").textContent = messages[clickCount];
     clickCount++;
     } else{
-        console.log("No more text changes available.")
+        console.log("No more text changes available.");
     }
 }
 
@@ -32,4 +32,13 @@ function displayGreeting(){
     } else{
         document.getElementById("greeting").textContent = "Please enter your name!";
     }
+}
+
+function moveButton(){
+    const x = Math.floor(Math.random() * window.innerWidth);
+    const y = Math.floor(Math.random() * window.innerHeight);
+    const button = document.getElementById("button4");
+    button.style.position = "absolute";
+    button.style.left = `${x}px`;
+    button.style.top = `${y}px`;
 }
