@@ -59,30 +59,17 @@ function resetColor(){
 
 function toggleMode() {
 
-    const body = document.body;
-    const button = document.getElementById('toggleButton');
+const body = document.body;
+const button = document.getElementById('toggleButton');
 
-    if(!customBackground){
-        if (body.classList.contains('dark-mode')){
-            button.textContent = 'Switch to dark mode';
-            body.classList.remove('dark-mode');
-            body.classList.add('light-mode');
-        } else { 
-            button.textContent = 'Switch to light mode';
-            body.classList.remove('light-mode');
-            body.classList.add('dark-mode');
-        }
-
-    }else {
-        body.style.backgroundColor ='';
-        if (body.classList.contains('dark-mode')){
-            button.textContent = 'Switch to dark mode';
-            body.classList.remove('dark-mode');
-            body.classList.add('light-mode');
-        } else { 
-            button.textContent = 'Switch to light mode';
-            body.classList.remove('light-mode');
-            body.classList.add('dark-mode');
-        }
+    body.style.backgroundColor = '';
+    if (body.classList.contains('dark-mode')){
+        button.textContent = 'Switch to dark mode';
+        body.classList.remove('dark-mode');
+        body.classList.add('light-mode');
+    } else { 
+        button.textContent = 'Switch to light mode';
+        body.classList.remove('light-mode');
+        body.classList.add('dark-mode');
     }
 }
