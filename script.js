@@ -6,7 +6,7 @@ let messages = [
 ];
 
 let clickCount = 0;
-
+let customBackground = false;
 
 
 
@@ -19,10 +19,7 @@ function changeText() {
     }
 }
 
-function changeBackground(){
-    const randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
-    document.body.style.backgroundColor = randomColor;
-}
+
 
 function displayGreeting(){
     const name = document.getElementById("nameInput").value;
@@ -42,7 +39,39 @@ function moveButton(){
     button.style.left = `${x}px`;
     button.style.top = `${y}px`;
 }
+
+function changeBackground(){
+    const body = document.body;
+    const randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+    body.style.backgroundColor = randomColor;
+    customBackground = true;
+}
+
 function resetColor(){
-    const originalColor = '#333';
-    document.body.style.backgroundColor = originalColor;
+    const button = document.getElementById('toggleButton');
+    const body = document.body;
+
+    button.textContent = 'Switch to light mode';
+    body.classList.add('dark-mode');
+    customBackground = false;
+    body.style.backgroundColor = '';
+}
+
+function toggleMode() {
+
+    const body = document.body;
+    const button = document.getElementById('toggleButton');
+
+    if(!customBackground){
+        if (body.classList.contains('dark-mode')){
+            button.textContent = 'Switch to dark mode';
+            body.classList.remove('dark-mode');
+            body.classList.add('light-mode');
+        } else { 
+            button.textContent = 'Switch to light mode';
+            body.classList.remove('light-mode');
+            body.classList.add('dark-mode');
+        }
+
+    }
 }
