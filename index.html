@@ -3,18 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blue Screen</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name ="author" content = "Carter Griffin">
+    <meta name = "description" content = "This page is the start of my Web Dev learning journey. ">
+    <title>Carter's Page</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
 </head>
+
 <body>
+    
     <h1 id="greeting">Welcome to Dave's Killer web page!</h1>
+    <p>Thank's for viewing my webpage. I have worked hard to get here.</p>
+    <hr>
+    
     <input type="text" id="nameInput" placeholder="Enter your name">
-    <button id="button1" onclick="changeText()">Click Me!</button1>
-    <button id="button2" onclick="changeBackground()">This color sucks I want a new one.</button2>
-    <button id="button3" onclick="displayGreeting()">Submit</button>
-    <button id="button4" onclick="moveButton()">Click me I dare you</button>
-    <h2>What's good bit!</h2>
+    <div class = "button-container">
+        <button id="button1" onclick="changeText()">Click Me!</button1>
+        <button id="button2" onclick="changeBackground()">This color sucks I want a new one.</button2>
+        <button id="button5" onclick="resetColor()">Reset Color</button>
+        <button id="button3" onclick="displayGreeting()">Submit</button>
+        <button id="button4" onclick="moveButton()">Click me I dare you</button>
+        
+    </div>
+
+    <div class = "paragraph-container">
+    <p>This is a paragraph. I am trying to learn how to place things on the page. 
+        This is a paragraph. I am trying to learn how to place things on the page. 
+        This is a paragraph. I am trying to learn how to place things on the page.
+        This is a paragraph. I am trying to learn how to place things on the page.
+    </p>
+    </div>
+    <div class="text"></div>
     <div class="bottom-text">this text is at the bottom of the screen.</div>
+    
     <script src="script.js"></script>
+
 </body>
+
 </html>

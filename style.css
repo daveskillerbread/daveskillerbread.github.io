@@ -1,40 +1,59 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgba(109, 158, 237, 0.975);
+    background-color: #333;
+    color: whitesmoke;
     display: flex;
-    justify-content: center;
-    align-items: baseline;
+    flex-direction: column;
+    align-items: center;
     margin: 0;
     height: 100vh;
 }
+hr {
+    width: 80%;                 /* Adjust the width as needed */
+    height: 2px;                /* Set the height of the line */
+    background-color: #ccc;     /* Set the color of the line */
+    border: none;               /* Remove any border */
+    margin: 20px auto;          /* Center it and add spacing */
+}
 
 h1{
-    color: white;
+    color: hotpink;
     text-align: center;
+    border-bottom: 5px solid red ;
+    padding-bottom: 5px;
 }
-h2{
+p{
     color: white;
     font-size: 16px;
     margin: 20px;
 }
-
-
-#button1 {
-    background-color: #3498db; /* Blue background */
-    color: white;              /* White text */
-    border: 2px solid #2980b9; /* Darker blue border */
-    padding: 10px 20px;        /* Space inside the button */
-    border-radius: 5px;        /* Rounds the corners */
-    font-size: 16px;           /* Adjusts text size */
+#nameInput{
+    padding: 10px;
+    margin: 20px auto;
 }
-
-#button2 {
-    background-color: #e74c3c; /* Red background */
-    color: white;              /* White text */
-    border: 2px solid #c0392b; /* Darker red border */
+.paragraph-container{
+    width: 50%;
+    padding: 20px;
+    margin: 20px auto;
+    background-color: #888;
+    color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.button-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+#button1, #button2, #button3, #button4, #button5 {
+    background-color: #3498db;
+    color: white;
+    border: 2px solid #2980b9;
     padding: 10px 20px;
     border-radius: 5px;
     font-size: 16px;
+    width: 200px; /* Keeps buttons uniform in width */
 }
 
 .bottom-text{

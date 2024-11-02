@@ -42,3 +42,7 @@ function moveButton(){
     button.style.left = `${x}px`;
     button.style.top = `${y}px`;
 }
+function resetColor(){
+    const originalColor = '#333';
+    document.body.style.backgroundColor = originalColor;
+}
